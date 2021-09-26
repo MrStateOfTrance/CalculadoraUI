@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraUI.MainPage">
+
+    <Grid BackgroundColor="Black" ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblResultado" Text="0" TextColor="Black" Grid.Row="0" Grid.Column="0" BackgroundColor="DarkCyan" VerticalOptions="End" Grid.ColumnSpan="2" HorizontalTextAlignment="End" FontSize="Title"></Label>
+        
+        <Button x:Name="btnAC" Text="AC" Grid.Row="1" Grid.Column="0" BackgroundColor="Orange" Clicked="btnAC_Clicked" ></Button>
+        <Button x:Name="btnplusmin" Text="+/-" Grid.Row="1" Grid.Column="1" BackgroundColor="Orange" Clicked="btnplusmin_Clicked"></Button>
+        <Button x:Name="btnPercent" Text="%" Grid.Row="1" Grid.Column="2" BackgroundColor="Orange" Clicked="btnPercent_Clicked"></Button>
+        <Button x:Name="btnDiv" Text="/" Grid.Row="1" Grid.Column="3" BackgroundColor="Orange" Clicked="btnDiv_Clicked"></Button>
+        <Button x:Name="btnMin" Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="Orange" Clicked="btnMin_Clicked"></Button>
+        <Button x:Name="btnSum" Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="Orange" Clicked="btnSum_Clicked"></Button>
+        <Button x:Name="btnIqual" Text="=" Grid.Row="5" Grid.Column="3" BackgroundColor="Orange" Clicked="btnIqual_Clicked"></Button>
+        <Button x:Name="btnX" Text="X" Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" Clicked="btnX_Clicked"></Button>
+
+        <Button x:Name="btn0" Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Clicked="btn0_Clicked"></Button>
+        <Button x:Name="btn1" Text="1" Grid.Row="4" Grid.Column="0" Clicked="btn1_Clicked"></Button>
+        <Button x:Name="btn2" Text="2" Grid.Row="4" Grid.Column="1" Clicked="btn2_Clicked"></Button>
+        <Button x:Name="btn3" Text="3" Grid.Row="4" Grid.Column="2" Clicked="btn3_Clicked"></Button>
+        <Button x:Name="btn4" Text="4" Grid.Row="3" Grid.Column="0" Clicked="btn4_Clicked"></Button>
+        <Button x:Name="btn5" Text="5" Grid.Row="3" Grid.Column="1" Clicked="btn5_Clicked"></Button>
+        <Button x:Name="btn6" Text="6" Grid.Row="3" Grid.Column="2" Clicked="btn6_Clicked"></Button>
+        <Button x:Name="btn7" Text="7" Grid.Row="2" Grid.Column="0" Clicked="btn7_Clicked"></Button>
+        <Button x:Name="btn8" Text="8" Grid.Row="2" Grid.Column="1" Clicked="btn8_Clicked"></Button>
+        <Button x:Name="btn9" Text="9" Grid.Row="2" Grid.Column="2" Clicked="btn9_Clicked"></Button>
+
+        <Button x:Name="btnPoint" Text="." Grid.Row="5" Grid.Column="2" Clicked="btnPoint_Clicked"></Button>
+       
+
+    </Grid>
+
+</ContentPage>
